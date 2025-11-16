@@ -1,0 +1,53 @@
+.quote {
+  background-color: $secondary-color;
+  color: $light-color;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top i {
+    font-size: 22px;
+    border: 1px solid $light-color;
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  &__middle {
+    margin-top: 40px;
+    width: 65%;
+    display: flex;
+    gap: 70px;
+    font-size: 18px;
+    text-align: center;
+
+    &__right {
+      align-self: end;
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      top: -22px;
+      right: 7px;
+      background-color: $light-color;
+    }
+  }
+}

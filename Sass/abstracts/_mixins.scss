@@ -1,0 +1,27 @@
+// mixins for not repeat a peace of code
+
+// @mixin hoverValues($bgColor, $scalVal: 1.5) {
+//   background-color: $bgColor;
+//   color: $primary-color;
+//   transform: scale($scalVal);
+// }
+
+@mixin hoverVal($bgColor, $fontColor: $light-color) {
+  background-color: $bgColor;
+  color: $fontColor;
+}
+
+@mixin arrow($color) {
+  border: 3px solid $color;
+  color: $color;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

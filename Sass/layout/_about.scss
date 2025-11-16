@@ -1,0 +1,16 @@
+.about {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+  &__info {
+    color: $gray-color;
+  }
+}

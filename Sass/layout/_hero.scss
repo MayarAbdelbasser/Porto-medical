@@ -1,0 +1,43 @@
+.hero {
+  // background-image: url("../../assets/hero.jpg");
+  background-image: url("https://res.cloudinary.com/med-one-group/image/upload/q_auto/v1641310292/Website/Images/Blog/understanding-overuse-underuse-and-misuse-of-medical-care_zytpbn.webp");
+  background-size: cover;
+  background-position: center;
+  color: $light-color;
+  height: 80dvh;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+  &__header {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__info--line {
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+  }
+}

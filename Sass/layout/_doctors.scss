@@ -1,0 +1,75 @@
+.doctors {
+  position: relative;
+  &__controls {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    top: 20%;
+    right: 0;
+
+    &__next {
+      @include arrow($secondary-color);
+      cursor: pointer;
+    }
+    &__prev {
+      @include arrow(#96a8cf);
+    }
+  }
+  &__container {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .doctor {
+    flex: 0 0 24%;
+    cursor: pointer;
+    &:hover img {
+      transform: scale(1.08);
+      -webkit-transform: scale(1.08);
+      -moz-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+      -o-transform: scale(1.08);
+    }
+
+    &__img {
+      width: 95%;
+      height: 70%;
+      overflow: hidden;
+      margin: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    &__job {
+      font-size: 18px;
+      color: $gray-color;
+    }
+    &__name {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &__arrow i {
+      @include arrow($dark-color);
+    }
+    &:hover .doctor__info {
+      @include hoverVal($primary-color);
+    }
+    &:hover .doctor__job {
+      @include hoverVal(transparent);
+    }
+    &:hover .doctor__arrow i {
+      border: 3px solid $light-color;
+      color: $light-color;
+    }
+  }
+}

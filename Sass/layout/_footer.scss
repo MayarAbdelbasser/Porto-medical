@@ -1,0 +1,49 @@
+.footer {
+  background-color: #34383d;
+  padding: 50px 0;
+  color: #95989c;
+  h4 {
+    color: $light-color;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+    font-size: 14px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hours {
+    li {
+      display: grid;
+      grid-template-columns: 50px 10px 1fr;
+      gap: 10px;
+    }
+    &--light {
+      color: $light-color;
+    }
+  }
+
+  &__cases {
+    p {
+      font-size: 28px;
+    }
+  }
+
+  &__media {
+    i {
+      color: $light-color;
+      font-size: 27px;
+      cursor: pointer;
+    }
+  }
+}

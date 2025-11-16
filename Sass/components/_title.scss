@@ -1,0 +1,14 @@
+.section-title {
+  &__header {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $dark-color;
+    font-size: 30px;
+  }
+
+  p {
+    margin-top: 5px;
+    color: $gray-color;
+    font-size: 20px;
+  }
+}

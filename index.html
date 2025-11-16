@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Sass/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="contacts">
+        <div class="container">
+          <div>
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>1234 Street Name, City Name</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p class="header__info">123-456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p class="header__info">mail@domain.com</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container--header">
+      <div class="container">
+        <div class="header__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2022/09/logo-medical.png"
+          />
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#" class="btn btn--secondary">Home</a></li>
+            <li><a href="#" class="btn btn--primary">About Us</a></li>
+            <li><a href="#" class="btn btn--primary">Departments</a></li>
+            <li><a href="#" class="btn btn--primary">Doctors</a></li>
+            <li><a href="#" class="btn btn--primary">Resources</a></li>
+            <li><a href="#" class="btn btn--primary">Contact</a></li>
+            <li><a href="#" class="btn btn--primary">Elements</a></li>
+            <li><a href="#" class="btn btn--primary">Buy Porto!</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- end header -->
+
+    <!-- main -->
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__header">Specialists</h1>
+        <p class="hero__info">20 years caring about you</p>
+        <p class="hero__info--line">We are located in New York</p>
+      </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- about section -->
+    <section class="about">
+      <div class="container about__container">
+        <div class="about__details">
+          <div class="section-title">
+            <h2 class="section-title__header">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <p class="about__info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            hendrerit, leo vitae interdum pretium, tortor risus dapibus tortor,
+            eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor
+            mattis sit amet in diam. Vestibulum non ornare arcu. Class aptent
+            taciti sociosqu ad...
+          </p>
+          <button type="button" class="btn btn--dark">read more</button>
+        </div>
+        <div class="about__img">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="about"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- department section -->
+    <section class="department">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__header">Departments</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="department__iconRow">
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-cardiology.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Cardiology</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-gastroenterology.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Gastroenterology</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-pulmonology.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Pulmonology</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-dental.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Dental</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-gynecology.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Gynecology</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <div class="card-icon__img">
+              <img
+                src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/department-icon-hepatology.png"
+              />
+            </div>
+            <div class="card-icon__text">
+              <h3>Hepatology</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit, leo vitae interdum…
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="department__btn">
+          <a href="#" class="btn btn--dark">View More</a>
+        </div>
+      </div>
+    </section>
+    <!-- end department section -->
+
+    <!-- doctors section -->
+    <section class="doctors container">
+      <div class="section-title">
+        <h2 class="section-title__header">Doctors</h2>
+        <p>Our Specialists</p>
+      </div>
+      <div class="doctors__controls">
+        <i class="fa-solid fa-arrow-left doctors__controls__prev"></i>
+        <i class="fa-solid fa-arrow-right doctors__controls__next"></i>
+      </div>
+      <div class="doctors__container">
+        <div class="doctor">
+          <div class="doctor__img">
+            <img
+              src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2016/09/doctor-1.jpg"
+              alt="doctor"
+            />
+          </div>
+          <div class="doctor__info">
+            <div>
+              <p class="doctor__job">Cardiology</p>
+              <p class="doctor__name">John Doe</p>
+            </div>
+            <div class="doctor__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="doctor__img">
+            <img src="./assets/doctor.png" alt="doctor" />
+          </div>
+          <div class="doctor__info">
+            <div>
+              <p class="doctor__job">Gastroenterology</p>
+              <p class="doctor__name">Robin Doe</p>
+            </div>
+            <div class="doctor__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="doctor__img">
+            <img src="./assets/doctor.jpg" alt="doctor" />
+          </div>
+          <div class="doctor__info">
+            <div>
+              <p class="doctor__job">Pulmonology</p>
+              <p class="doctor__name">Alex Doe</p>
+            </div>
+            <div class="doctor__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="doctor__img">
+            <img src="./assets/doctor1.png" alt="doctor" />
+          </div>
+          <div class="doctor__info">
+            <div>
+              <p class="doctor__job">Dental</p>
+              <p class="doctor__name">Robert Doe</p>
+            </div>
+            <div class="doctor__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="doctor__img">
+            <img src="./assets/doctor2.png" alt="doctor" />
+          </div>
+          <div class="doctor__info">
+            <div>
+              <p class="doctor__job">Gynecology</p>
+              <p class="doctor__name">Noah Doe</p>
+            </div>
+            <div class="doctor__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end doctors section -->
+
+    <!-- resources section -->
+    <section class="resources">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__header">Resources</h2>
+          <p>List of our features resources</p>
+        </div>
+        <div class="resources__cards">
+          <div class="resources__cards__card">
+            <div class="resources__cards__card__img">
+              <img src="./assets/resources1.jpg" />
+            </div>
+            <div class="resources__cards__card__info">
+              <h4>Prepare for visit</h4>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibhm
+              </p>
+            </div>
+          </div>
+          <div class="resources__cards__card">
+            <div class="resources__cards__card__img">
+              <img src="./assets/resources2.webp" />
+            </div>
+            <div class="resources__cards__card__info">
+              <h4>Patients</h4>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibhm
+              </p>
+            </div>
+          </div>
+          <div class="resources__cards__card">
+            <div class="resources__cards__card__img">
+              <img src="./assets/resources3.jpg" />
+            </div>
+            <div class="resources__cards__card__info">
+              <h4>Surgery Process</h4>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibhm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="department__btn">
+          <a href="#" class="btn btn--dark">View More</a>
+        </div>
+      </div>
+    </section>
+    <!-- end resources section -->
+
+    <!-- insurance section -->
+    <section class="insurance container">
+      <div class="section-title">
+        <h2 class="section-title__header">Insurance</h2>
+        <p>Major insurance providers accepted</p>
+      </div>
+      <div class="insurance__providers">
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-1.png"
+          />
+        </div>
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-2.png"
+          />
+        </div>
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-3.png"
+          />
+        </div>
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-4.png"
+          />
+        </div>
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-5.png"
+          />
+        </div>
+        <div class="insurance__providers__img">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2024/02/medical-logo-6.png"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- end insurance section -->
+
+    <!-- quote section -->
+    <section class="quote">
+      <div class="container quote__container">
+        <div class="quote__top">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <div class="quote__middle">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            hendrerit, leo vitae interdum pretium, tortor risus dapibus tortor,
+            eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor
+            mattis sit amet in diam. Vestibulum non.
+          </p>
+          <i class="fa-solid fa-quote-right quote__middle__right"></i>
+        </div>
+        <div class="quote__bottom">
+          <p>JOHN SMITH</p>
+        </div>
+      </div>
+    </section>
+    <!-- end quote section -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__location">
+          <h4>Location</h4>
+          <ul>
+            <li>Porto Medical</li>
+            <li>123 Porto Blvd, Suite 100</li>
+            <li>New York, NY</li>
+            <li>Phone : 123-456-7890</li>
+          </ul>
+        </div>
+        <div class="footer__hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>
+              <span>Mon-Fri</span>
+              <span>:</span>
+              <span class="footer__hours--light">8:30 am to 5:00 pm</span>
+            </li>
+            <li>
+              <span>Saturday</span>
+              <span>:</span>
+              <span class="footer__hours--light">8:30 am to 5:00 pm</span>
+            </li>
+            <li>
+              <span>Sunday</span>
+              <span>:</span>
+              <span class="footer__hours--light">Closed</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cases">
+          <h4>Emergency Cases</h4>
+          <p>(800)123-4567</p>
+        </div>
+        <div class="footer__media">
+          <h4>Social Media</h4>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <i class="fa-brands fa-square-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script>
+      const container = document.querySelector(".doctors__container");
+      const nextBtn = document.querySelector(".doctors__controls__next");
+      const prevBtn = document.querySelector(".doctors__controls__prev");
+
+      const cardWidth = container.querySelector(".doctor").offsetWidth + 20;
+
+      const changeStyle = (currentBtn, newBtn) => {
+        currentBtn.style.color = "#96a8cf";
+        currentBtn.style.borderColor = "#96a8cf";
+        currentBtn.style.cursor = "initial";
+
+        newBtn.style.color = "#2d529f";
+        newBtn.style.borderColor = "#2d529f";
+        newBtn.style.cursor = "pointer";
+      };
+      nextBtn.addEventListener("click", (event) => {
+        container.scrollBy({
+          left: cardWidth,
+          behavior: "smooth",
+        });
+        changeStyle(nextBtn, prevBtn);
+      });
+
+      prevBtn.addEventListener("click", (event) => {
+        container.scrollBy({
+          left: -cardWidth,
+          behavior: "smooth",
+        });
+        changeStyle(prevBtn, nextBtn);
+      });
+    </script>
+  </body>
+</html>
