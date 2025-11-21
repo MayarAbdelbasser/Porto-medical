@@ -242,6 +242,9 @@ section {
     font-size: 30px;
   }
 }
+.about {
+  background-color: white;
+}
 .about__container {
   display: flex;
   justify-content: space-between;
