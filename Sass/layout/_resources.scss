@@ -43,3 +43,10 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .resources {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+}

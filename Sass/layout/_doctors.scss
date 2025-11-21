@@ -14,7 +14,8 @@
       cursor: pointer;
     }
     &__prev {
-      @include arrow(#96a8cf);
+      @include arrow($secondary-color);
+      cursor: pointer;
     }
   }
   &__container {
@@ -26,6 +27,7 @@
   .doctor {
     flex: 0 0 24%;
     cursor: pointer;
+    min-width: 300px;
     &:hover img {
       transform: scale(1.08);
       -webkit-transform: scale(1.08);
@@ -71,5 +73,10 @@
       border: 3px solid $light-color;
       color: $light-color;
     }
+  }
+}
+@media (max-width: 445px) {
+  .doctors .doctor {
+    min-width: 100%;
   }
 }

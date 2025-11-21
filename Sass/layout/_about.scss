@@ -14,3 +14,11 @@
     color: $gray-color;
   }
 }
+@media screen and (max-width: 992px) {
+  .about {
+    &__container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

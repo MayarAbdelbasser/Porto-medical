@@ -25,13 +25,17 @@ section {
   padding: 70px 0;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 .department {
   background-color: #eee;
 }
 .department__iconRow {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 35px;
 }
 .department__btn {
@@ -40,6 +44,14 @@ section {
   margin-top: 50px;
 }
 
+@media (max-width: 445px) {
+  .department__iconRow {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .department .card-icon__img {
+    text-align: center;
+  }
+}
 .header {
   width: 100%;
 }
@@ -91,7 +103,6 @@ section {
 }
 
 .header__nav {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,6 +120,77 @@ section {
   font-size: 12px;
 }
 
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  gap: 5px;
+}
+.nav__toggle span {
+  background-color: #008fe2;
+  height: 3.9px;
+  width: 28px;
+  display: block;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+  .header__nav {
+    width: 100%;
+    max-width: 100%;
+  }
+  .nav__menu {
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    overflow: hidden;
+    font-size: 1.25rem;
+  }
+  .nav__menu.active {
+    height: 200px;
+    padding: 20px 0;
+  }
+  .nav__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+  }
+  .nav__toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__toggle.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+  }
+  .header .contacts .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .hero {
   background-image: url("https://res.cloudinary.com/med-one-group/image/upload/q_auto/v1641310292/Website/Images/Blog/understanding-overuse-underuse-and-misuse-of-medical-care_zytpbn.webp");
   background-size: cover;
@@ -152,6 +234,14 @@ section {
   text-decoration-thickness: 1px;
 }
 
+@media screen and (max-width: 992px) {
+  .hero {
+    height: 60dvh;
+  }
+  .hero__header {
+    font-size: 30px;
+  }
+}
 .about__container {
   display: flex;
   justify-content: space-between;
@@ -167,6 +257,12 @@ section {
   color: #6c757d;
 }
 
+@media screen and (max-width: 992px) {
+  .about__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .doctors {
   position: relative;
 }
@@ -195,8 +291,8 @@ section {
   cursor: pointer;
 }
 .doctors__controls__prev {
-  border: 3px solid #96a8cf;
-  color: #96a8cf;
+  border: 3px solid #2d529f;
+  color: #2d529f;
   width: 30px;
   aspect-ratio: 1/1;
   display: flex;
@@ -207,6 +303,7 @@ section {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  cursor: pointer;
 }
 .doctors__container {
   display: flex;
@@ -217,6 +314,7 @@ section {
 .doctors .doctor {
   flex: 0 0 24%;
   cursor: pointer;
+  min-width: 300px;
 }
 .doctors .doctor:hover img {
   transform: scale(1.08);
@@ -276,6 +374,11 @@ section {
   color: white;
 }
 
+@media (max-width: 445px) {
+  .doctors .doctor {
+    min-width: 100%;
+  }
+}
 .resources {
   background-color: #eee;
 }
@@ -313,21 +416,22 @@ section {
   margin-top: 8px;
 }
 
+@media screen and (max-width: 992px) {
+  .resources__cards {
+    flex-direction: column;
+  }
+}
 .insurance__providers {
   margin-top: 30px;
-  display: flex;
-  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 }
 .insurance__providers__img {
-  width: 16.6666666667%;
   padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.insurance__providers__img:nth-child(n+2):not(:last-child) {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border: 1px solid #eee;
 }
 
 .quote {
@@ -380,6 +484,12 @@ section {
   background-color: white;
 }
 
+@media screen and (max-width: 992px) {
+  .quote__middle {
+    width: 100%;
+    gap: 10px;
+  }
+}
 .footer {
   background-color: #34383d;
   padding: 50px 0;
@@ -388,7 +498,7 @@ section {
 .footer h4 {
   color: white;
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .footer ul {
   display: flex;
@@ -420,6 +530,12 @@ section {
   cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 .btn {
   text-decoration: none;
   text-transform: uppercase;

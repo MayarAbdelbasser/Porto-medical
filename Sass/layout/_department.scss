@@ -4,7 +4,7 @@
   &__iconRow {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 35px;
   }
 
@@ -12,5 +12,18 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+  }
+}
+@media (max-width: 445px) {
+  .department {
+    &__iconRow {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .card-icon {
+      // flex-direction: column;
+      &__img {
+        text-align: center;
+      }
+    }
   }
 }

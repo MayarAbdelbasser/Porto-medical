@@ -41,3 +41,11 @@
     text-decoration-thickness: 1px;
   }
 }
+@media screen and (max-width: 992px) {
+  .hero {
+    height: 60dvh;
+    &__header {
+      font-size: 30px;
+    }
+  }
+}

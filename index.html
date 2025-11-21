@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Porto Medical</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -40,16 +41,21 @@
             src="https://www.portotheme.com/wordpress/porto/medical/wp-content/uploads/sites/67/2022/09/logo-medical.png"
           />
         </div>
+        <button class="nav__toggle">
+          <span class="transition bar"></span>
+          <span class="transition bar"></span>
+          <span class="transition bar"></span>
+        </button>
         <nav class="header__nav">
-          <ul>
-            <li><a href="#" class="btn btn--secondary">Home</a></li>
-            <li><a href="#" class="btn btn--primary">About Us</a></li>
-            <li><a href="#" class="btn btn--primary">Departments</a></li>
+          <ul class="nav__menu">
+            <li><a href="#hero" class="btn btn--secondary">Home</a></li>
+            <li><a href="#about" class="btn btn--primary">About Us</a></li>
+            <li>
+              <a href="#department" class="btn btn--primary">Departments</a>
+            </li>
             <li><a href="#" class="btn btn--primary">Doctors</a></li>
             <li><a href="#" class="btn btn--primary">Resources</a></li>
             <li><a href="#" class="btn btn--primary">Contact</a></li>
-            <li><a href="#" class="btn btn--primary">Elements</a></li>
-            <li><a href="#" class="btn btn--primary">Buy Porto!</a></li>
           </ul>
         </nav>
       </div>
@@ -60,7 +66,7 @@
     <!-- main -->
 
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
         <h1 class="hero__header">Specialists</h1>
         <p class="hero__info">20 years caring about you</p>
@@ -70,19 +76,21 @@
     <!-- end hero section -->
 
     <!-- about section -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__container">
         <div class="about__details">
           <div class="section-title">
             <h2 class="section-title__header">About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              At Porto Medical, we are dedicated to delivering trusted and
+              professional medical care for individuals and families.
+            </p>
           </div>
           <p class="about__info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            hendrerit, leo vitae interdum pretium, tortor risus dapibus tortor,
-            eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor
-            mattis sit amet in diam. Vestibulum non ornare arcu. Class aptent
-            taciti sociosqu ad...
+            Our team of experienced specialists works with modern tools and a
+            patient-first approach to ensure accurate diagnoses and effective
+            treatments. We're here to provide a comfortable, supportive, and
+            reliable healthcare experience you can count on.
           </p>
           <button type="button" class="btn btn--dark">read more</button>
         </div>
@@ -97,7 +105,7 @@
     <!-- end about section -->
 
     <!-- department section -->
-    <section class="department">
+    <section class="department" id="department">
       <div class="container">
         <div class="section-title">
           <h2 class="section-title__header">Departments</h2>
@@ -447,37 +455,6 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script>
-      const container = document.querySelector(".doctors__container");
-      const nextBtn = document.querySelector(".doctors__controls__next");
-      const prevBtn = document.querySelector(".doctors__controls__prev");
-
-      const cardWidth = container.querySelector(".doctor").offsetWidth + 20;
-
-      const changeStyle = (currentBtn, newBtn) => {
-        currentBtn.style.color = "#96a8cf";
-        currentBtn.style.borderColor = "#96a8cf";
-        currentBtn.style.cursor = "initial";
-
-        newBtn.style.color = "#2d529f";
-        newBtn.style.borderColor = "#2d529f";
-        newBtn.style.cursor = "pointer";
-      };
-      nextBtn.addEventListener("click", (event) => {
-        container.scrollBy({
-          left: cardWidth,
-          behavior: "smooth",
-        });
-        changeStyle(nextBtn, prevBtn);
-      });
-
-      prevBtn.addEventListener("click", (event) => {
-        container.scrollBy({
-          left: -cardWidth,
-          behavior: "smooth",
-        });
-        changeStyle(prevBtn, nextBtn);
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
